@@ -20,8 +20,9 @@ function AppPro() : JSX.Element{
             <View style={Styles.container}>
                 {/* Concluding IF dark mode is on change text to light and vise-versa */}
                 <Text style={isDarkMode?Styles.whiteTxt:Styles.darkTxt}>AppPro.tsx</Text>
+            
                 {/* Button just for demo with event onPress */}
-                <Button title="Hi" onPress={()=>Alert.alert("Hiii!!!")}></Button>
+                <Button title="Hi" onPress={()=>Alert.alert("Hiii!!!")} color="black"></Button>
             </View>
         </SafeAreaView>
     )
@@ -31,7 +32,7 @@ function AppPro() : JSX.Element{
 
     const Styles = StyleSheet.create({
         container : {
-            backgroundColor:"red",
+            backgroundColor:"cyan",
         },
 
         whiteTxt:{
