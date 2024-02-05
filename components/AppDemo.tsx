@@ -6,7 +6,6 @@ const AppDemo = () => {
   return (
     <SafeAreaView>
         <ScrollView>
-            <Text>AppDemo</Text>
             <FlatCards />
         </ScrollView>
     </SafeAreaView>
