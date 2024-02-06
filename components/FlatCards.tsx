@@ -19,6 +19,21 @@ const FlatCards = () => {
           <Text>Red</Text>
         </View>
       </View>
+      <View style={styles.container}>
+        <View style={[styles.cards, styles.cardOne]}>
+          <Text>Red</Text>
+        </View>
+        <View style={[styles.cards, styles.cardTwo]}>
+          <Text>Green</Text>
+        </View>
+        <View style={[styles.cards, styles.cardThree]}>
+          <Text>Blue</Text>
+        </View>
+        <View style={[styles.cards, styles.cardOne]}>
+          <Text>Red</Text>
+        </View>
+      </View>
+
     </View>
   )
 }
