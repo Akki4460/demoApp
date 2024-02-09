@@ -39,6 +39,16 @@ const ContactList = () => {
   return (
     <View>
       <Text style={{fontSize:20, paddingHorizontal:8,fontWeight:'bold'}}>ContactList</Text>
+      <ScrollView style={styles.status} horizontal showsHorizontalScrollIndicator={false}>
+        {contacts.map(({uid,img})=>(
+            <View key={uid} style={{marginHorizontal:7}}>
+                <Image source={{
+                    uri: img
+                }}
+                style={styles.userImage} />
+            </View>
+        ))}
+      </ScrollView>
       <ScrollView style={styles.container} scrollEnabled={false}>
         {/* This is used for iteration and specially that second (pink) bracket, can be used as a () or {}, but incase if we use curly brackets there is need to type return to that or else by () return keyword is not necessary  */}
         {contacts.map(({uid,name,info,img})=>(
@@ -61,6 +71,9 @@ const ContactList = () => {
 export default ContactList
 
 const styles = StyleSheet.create({
+    status:{
+        margin:10
+    },
     container:{
         paddingHorizontal:10,
         marginBottom:20
