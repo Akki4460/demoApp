@@ -3,7 +3,7 @@ import React from 'react'
 
 const ActionCards = () => {
 
-
+// Function to Open link from a button {TouchableOpacity}
     function openLink(webLink: string){
         Linking.openURL(webLink)
     }
@@ -15,7 +15,7 @@ const ActionCards = () => {
           <Text style={styles.cardTitle}>Lorem, ipsum</Text>
         <Image
             source={{
-                uri:'https://images.unsplash.com/photo-1704419278774-fa691a032632?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                uri:'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             }} 
             style={styles.cardImage}
             />
@@ -46,11 +46,11 @@ const styles = StyleSheet.create({
     },
     cardElevated:{
         backgroundColor:'#ffffff',
-        elevation:4
+        elevation:5
     },
     cardImage:{
         height:200,
-        marginBottom:8,
+        margin:8,
         borderTopLeftRadius:5,
         borderTopRightRadius:5
     },
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
         fontSize:22,
         fontWeight:'bold',
         marginBottom:6,
+        marginTop:5,
         paddingHorizontal:8
     },
     cardLabel:{

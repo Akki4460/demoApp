@@ -5,7 +5,7 @@ const FancyCards = () => {
   return (
     <View>
       <Text style={{fontSize:20, paddingHorizontal:8,fontWeight:'bold'}}>Trending Places</Text>
-      <ScrollView horizontal>
+      <ScrollView horizontal >
       <View style={[styles.card, styles.cardElevated]}>
         <Image
             source={{
